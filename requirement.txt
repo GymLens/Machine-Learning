@@ -1,0 +1,10 @@
+streamlit
+tensorflow
+PIL
+numpy
+drive
+os
+matplotlib
+sklearn
+ipywidgets
+io
