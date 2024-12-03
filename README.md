@@ -1,5 +1,6 @@
 # Machine-Learning
 This repository houses various resources used in the capstone project for Bangkit Machine Learning. The project aims to develop machine learning models for our application, specifically image classifiers for Gym Equipment.
+![WhatsApp Image 2024-12-03 at 21 54 03_6e68233d](https://github.com/user-attachments/assets/8bc52373-8bb6-4e50-b760-aefcfbd5e34d)
 
 ## Architecture
 The model utilizes Convolutional Neural Network (CNN) technology, a robust machine learning approach. This architecture allows the model to efficiently analyze and identify patterns in input data, making it ideal for tasks like image classification. Additionally, we use transfer learning with DenseNet to enhance the model's performance.
@@ -28,11 +29,21 @@ Utilizes a CNN architecture for accurate image classification:
 - Batch Normalization normalizes activations after dropout for stable and faster training.
 - Global Average Pooling replaces fully connected layers for spatial dimension reduction.
 - Final dense layer with class_count units and softmax activation for classification.
+
 ### Data Processing
-- 7 gym equipment classes, including bench press, dumbel, 
-- Data augmentation using TensorFlow’s ImageDataGenerator for rotation, zoom, flipping, and more.
+The dataset used consists of images of gym equipment categorized into 12 classes: bench press, dip bar, dumbbells, elliptical machine, kettlebell, lateral pulldown, leg press machine, pull bar, recumbent bike, stair climber, Swiss ball, and treadmill.
+To enhance the dataset's diversity and size, data augmentation is applied using TensorFlow's `ImageDataGenerator`. Key augmentation techniques include:
+- Rescaling: Normalizes pixel values by scaling them to a range of 0 to 1.
+- Rotation: Rotates images randomly up to 30 degrees.
+- Width & Height Shifting: Translates images up to 20% of their width or height.
+- Shearing: Applies shear transformations to images.
+- Zooming: Randomly zooms images in or out by up to 20%.
+- Horizontal Flipping: Randomly flips images horizontally for more variability. 
+These techniques help prevent overfitting and improve model generalization.
+
 ### Model Training
-- Training on augmented datasets for x epochs with a batch size of x.
+The model is trained on augmented datasets for 100 epochs with a batch size of 32. Transfer learning is utilized with the DenseNet121 architecture as the base model, leveraging its pre-trained features to enhance performance on our gym equipment classification task. The augmented dataset, enriched with diverse transformations, helps improve model generalization and robustness.
+
 ### Model Evaluation
 
 ### Model Saving and Conversion
