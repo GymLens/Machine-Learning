@@ -56,6 +56,7 @@ To run the code, the following libraries are required:
 - TensorFlow
 - Keras
 - NumPy
+- Pandas
 - Scikit-learn
 - Matplotlib
 - Seaborn
