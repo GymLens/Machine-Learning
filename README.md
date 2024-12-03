@@ -4,7 +4,7 @@ This repository houses various resources used in the capstone project for Bangki
 ![WhatsApp Image 2024-12-03 at 21 54 03_6e68233d](https://github.com/user-attachments/assets/8bc52373-8bb6-4e50-b760-aefcfbd5e34d)
 
 ## Architecture
-The model utilizes Convolutional Neural Network (CNN) technology, a robust machine learning approach. This architecture allows the model to efficiently analyze and identify patterns in input data, making it ideal for tasks like image classification. Additionally, we use transfer learning with DenseNet to enhance the model's performance.
+The model utilizes Convolutional Neural Network (CNN) technology, a robust machine learning approach. This architecture allows the model to efficiently analyze and identify patterns in input data, making it ideal for tasks like image classification. Additionally, we use transfer learning with DenseNet121 to enhance the model's performance.
 
 ![image](https://github.com/user-attachments/assets/5360a61b-eef9-4abb-95ad-7354033f0819)
 
@@ -52,7 +52,7 @@ The trained model is evaluated using the test dataset, providing accuracy and lo
 The trained model is stored in HDF5 format (`gym_model.h5`) for later use. To enable compatibility with Android applications, it is converted into TensorFlow Lite (TFLite) format using the TFLite Converter. The resulting TFLite file, `gym_model.tflite`, is optimized for deployment on devices with limited resources. Additionally, a Flask-based API is developed to serve the `gym_model`.h5 file. This API is deployed on Google Cloud Run, leveraging Google Cloud Platform (GCP) for scalable and efficient model hosting.
 
 ## Requirements
-To run the code, the following libraries are required
+To run the code, the following libraries are required:
 - TensorFlow
 - Keras
 - NumPy
