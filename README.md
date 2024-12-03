@@ -1,5 +1,6 @@
 # Machine-Learning
 This repository houses various resources used in the capstone project for Bangkit Machine Learning. The project aims to develop machine learning models for our application, specifically image classifiers for Gym Equipment.
+
 ![WhatsApp Image 2024-12-03 at 21 54 03_6e68233d](https://github.com/user-attachments/assets/8bc52373-8bb6-4e50-b760-aefcfbd5e34d)
 
 ## Architecture
