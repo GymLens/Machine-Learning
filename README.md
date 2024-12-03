@@ -18,7 +18,7 @@ We are using the following datasets:
 ## Models
 ### Model Overview
 Utilizes a CNN architecture for accurate image classification:
-- Convolutional layer with 3 convulational layers to extract features:
+- Convolutional layer with 3 convulational layers to extract features.
   - First layer: 64 filters, kernel size 3x3, ReLU activation, stride 1.
   - Second layer: 64 filters, similar settings.
   - Third layer: 128 filters, similar settings.
@@ -46,15 +46,19 @@ These techniques help prevent overfitting and improve model generalization.
 The model is trained on augmented datasets for 100 epochs with a batch size of 32. Transfer learning is utilized with the DenseNet121 architecture as the base model, leveraging its pre-trained features to enhance performance on our gym equipment classification task. The augmented dataset, enriched with diverse transformations, helps improve model generalization and robustness.
 
 ### Model Evaluation
+The trained model is evaluated using the test dataset, providing accuracy and loss scores to measure its performance. Additionally, predictions are generated for the test dataset to showcase the model's classification results. The evaluation includes plotting training and validation loss and accuracy graphs to assess model performance over epochs. A confusion matrix is used to visualize how well the model distinguishes between the 12 gym equipment classes. Detailed predictions, including the predicted class and confidence scores, are logged for further analysis. The results and trained model are saved for reproducibility.
 
 ### Model Saving and Conversion
+The trained model is stored in HDF5 format (`gym_model.h5`) for later use. To enable compatibility with Android applications, it is converted into TensorFlow Lite (TFLite) format using the TFLite Converter. The resulting TFLite file, `gym_model.tflite`, is optimized for deployment on devices with limited resources. Additionally, a Flask-based API is developed to serve the `gym_model`.h5 file. This API is deployed on Google Cloud Run, leveraging Google Cloud Platform (GCP) for scalable and efficient model hosting.
 
 ## Requirements
 To run the code, the following libraries are required
 - TensorFlow
 - Keras
+- NumPy
+- Scikit-learn
 - Matplotlib
-- PIL
-- os
-- google.colab
+- Seaborn
+- IPython
+- OS
 
