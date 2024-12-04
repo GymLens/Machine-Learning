@@ -2,14 +2,14 @@
 <p align="justify"> This repository houses various resources used in the capstone project for Bangkit Machine Learning. The project aims to develop machine learning models for our application, specifically image classifiers for Gym Equipment. </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8bc52373-8bb6-4e50-b760-aefcfbd5e34d" alt="App" style="width:50%; height:auto;">
+  <img src="https://github.com/user-attachments/assets/8bc52373-8bb6-4e50-b760-aefcfbd5e34d" alt="App" style="width:40%; height:auto;">
 </p>
 
 ## Main Feature: Image Classification using CNN Architecture
 <p align="justify"> The model utilizes Convolutional Neural Network (CNN) technology, a robust machine learning approach. This architecture allows the model to efficiently analyze and identify patterns in input data, making it ideal for tasks like image classification. Additionally, we use transfer learning with DenseNet121 to enhance the model's performance. </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e1c7aaa3-1324-4587-bc3b-21a60c257c6f" alt="GymLensArch" style="width:70%; height:auto;">
+  <img src="https://github.com/user-attachments/assets/e1c7aaa3-1324-4587-bc3b-21a60c257c6f" alt="GymLensArch" style="width:60%; height:auto;">
 </p>
 
 ### Datasets
@@ -37,7 +37,9 @@ Utilizes a CNN architecture for accurate image classification:
 
 #### Data Processing
 <p align="justify"> The dataset used consists of images of gym equipment categorized into 12 classes: bench press, dip bar, dumbbells, elliptical machine, kettlebell, lateral pulldown, leg press machine, pull bar, recumbent bike, stair climber, Swiss ball, and treadmill.
-To enhance the dataset's diversity and size, data augmentation is applied using TensorFlow's `ImageDataGenerator`. Key augmentation techniques include: </p>
+To enhance the dataset's diversity and size, data augmentation is applied using TensorFlow's `ImageDataGenerator`. </p>
+
+Key augmentation techniques include:
 - Rescaling: Normalizes pixel values by scaling them to a range of 0 to 1.
 - Rotation: Rotates images randomly up to 30 degrees.
 - Width & Height Shifting: Translates images up to 20% of their width or height.
