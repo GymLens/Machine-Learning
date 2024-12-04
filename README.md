@@ -1,13 +1,15 @@
 # Machine-Learning
 This repository houses various resources used in the capstone project for Bangkit Machine Learning. The project aims to develop machine learning models for our application, specifically image classifiers for Gym Equipment.
 
-![WhatsApp Image 2024-12-03 at 21 54 03_6e68233d](https://github.com/user-attachments/assets/8bc52373-8bb6-4e50-b760-aefcfbd5e34d)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8bc52373-8bb6-4e50-b760-aefcfbd5e34d" alt="App" style="width:50%; height:auto;">
+</p>
 
 ## Main Feature: Image Classification using CNN Architecture
 The model utilizes Convolutional Neural Network (CNN) technology, a robust machine learning approach. This architecture allows the model to efficiently analyze and identify patterns in input data, making it ideal for tasks like image classification. Additionally, we use transfer learning with DenseNet121 to enhance the model's performance.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/03980060-3adf-4ee8-a237-ad3ade6c7487" alt="GymLensArch" style="width:30%; height:auto;">
+  <img src="https://github.com/user-attachments/assets/e1c7aaa3-1324-4587-bc3b-21a60c257c6f" alt="GymLensArch" style="width:70%; height:auto;">
 </p>
 
 ### Datasets
