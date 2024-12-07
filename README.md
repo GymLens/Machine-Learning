@@ -70,5 +70,20 @@ To run the code, the following libraries are required:
 - OS
 
 ## Side Feature: Chatbot using Vertex AI
-<p align="justify"></p>
+### Vertex AI Soft Fine-Tuning (SFT) 🤖  
+<p align="justify">The chatbot is built using Vertex AI's Soft Fine-Tuning (SFT) feature, enabling domain-specific adaptation of the Gemini-1.0-pro model to gym-related tasks.</p>  
 
+#### Fine-Tuning Configuration  
+- **Base Model:** `gemini-1.0-pro-002`  
+- **Adapter-Based Tuning:**  
+  - Adapter size: 4  
+  - Epochs: 4  
+  - Learning rate multiplier: 1.0  
+- **Datasets:**  
+  - Training: `gs://vertexai-bucket/data_valid.jsonl`  
+  - Validation: `gs://vertexai-bucket/data_valid.jsonl`  
+
+#### Features and Benefits  
+- Fine-tunes a generative AI model for gym-related tasks.  
+- Outputs a tuned model and endpoint, ready for integration.  
+- Scalable deployment on Vertex AI with minimal compute overhead.
