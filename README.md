@@ -80,8 +80,8 @@ To run the code, the following libraries are required:
   - Epochs: 4  
   - Learning rate multiplier: 1.0  
 - **Datasets:**  
-  - Training: `gs://vertexai-bucket/data_valid.jsonl`  
-  - Validation: `gs://vertexai-bucket/data_valid.jsonl`  
+  - Training: [`data_train.jsonl`](https://drive.google.com/file/d/1zgPJLyIrZw1zHFr8JfcjKuhSdSB09dMV/view?usp=drive_link)
+  - Validation: [`data_valid.jsonl`](https://drive.google.com/file/d/13sJ14Z9vd6DaDhfJvdYC1RH3635Yj6Eg/view?usp=sharing) 
 
 #### Features and Benefits  
 - Fine-tunes a generative AI model for gym-related tasks.  
